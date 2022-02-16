@@ -46,15 +46,17 @@ body {
         }
         &:first-child {
           position: relative;
-          li:first-child {
-            margin-left: 12px;
-            margin-right: 135px;
-          }
-          li:nth-child(2),
-          li:nth-child(3),
-          li:last-child {
-            margin-right: 55px;
-            color: $gray;
+          li {
+            &:first-child {
+              margin-left: 12px;
+              margin-right: 135px;
+            }
+            &:nth-child(2),
+            &:nth-child(3),
+            &:last-child {
+              margin-right: 55px;
+              color: $gray;
+            }
           }
           // & > .panel {
           //   width: 100%;
