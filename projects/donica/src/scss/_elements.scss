@@ -1,0 +1,13 @@
+%grid {
+  display: grid;
+  grid-template-columns: 1fr 3.8fr 6.18fr 0.17fr;
+  grid-template-rows: 100%;
+}
+
+%span {
+  font-family: sans-serif;
+  color: $black;
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+}
