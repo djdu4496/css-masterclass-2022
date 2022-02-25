@@ -1,0 +1,137 @@
+@import "_reset";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  main {
+    height: 100%;
+    margin-right: 180px;
+
+    .logo {
+      padding-left: 3.75rem;
+      padding-top: 3.75rem;
+      position: fixed;
+      top: 0;
+      background-color: transparent;
+
+      & > img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    header {
+      padding: 15.1rem 9.85rem 7.5rem 3.75rem;
+      & > h1 {
+        line-height: 1.1;
+        font-size: 5rem;
+        letter-spacing: 2;
+      }
+    }
+
+    .image__wrapper {
+      margin-bottom: 2.5rem;
+      & > img {
+        width: 100%;
+        height: 36rem;
+      }
+    }
+
+    .market-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 2.8fr 3.4fr 1fr;
+      padding: 4rem 3.7rem;
+      column-gap: 3.75rem;
+
+      & > h1 {
+        font-family: "Cormorant Garamond", serif;
+        width: 60%;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        font-size: 8.4rem;
+        margin-bottom: 4rem;
+        line-height: 1.2;
+      }
+
+      & > div {
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          background-size: 100% 100%;
+          margin-bottom: 1.875rem;
+        }
+
+        &:nth-child(2) {
+          background-image: url("https://images.prismic.io/canalstreetmarket/8f74dfabde9ebd66d0d078ba6cf794c77dc8ac5b_home_page_one.jpg?auto=compress,format");
+        }
+        &:nth-child(3) {
+          background-image: url("https://images.prismic.io/canalstreetmarket/20c7997073b456fda0e6de872d23b6183892bdde_home_page_two.jpg?auto=compress,format");
+        }
+        &:nth-child(4) {
+          background-image: url("https://images.prismic.io/canalstreetmarket/13a988aff3e9c672350fe8330eb7386c3a85eeb9_home_page_three.jpg?auto=compress,format");
+        }
+      }
+      & > p {
+        font-family: "PT Mono", monospace;
+        font-size: 0.9rem;
+        line-height: 1.4;
+      }
+    }
+  }
+  nav {
+    width: 180px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    & > ul {
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100%;
+
+      & > li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:first-child {
+          background-color: #5da3ec;
+        }
+
+        &:nth-child(2) {
+          background-color: #f64444;
+        }
+
+        &:last-child {
+          background-color: #ffb400;
+        }
+
+        & > span {
+          font-family: "PT Mono", monospace;
+          writing-mode: vertical-lr;
+          font-size: 19px;
+          letter-spacing: 0.8px;
+        }
+
+        & > p {
+          font-family: apercu mono, sans-serif;
+          font-weight: 400;
+          font-size: 1.25rem;
+          top: 5.03rem;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
